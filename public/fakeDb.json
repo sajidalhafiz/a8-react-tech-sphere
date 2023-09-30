@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "author_name": "By Lejla Batina",
+        "blog_title": "No, AI did not break post-quantum cryptography",
+        "cover_image": "https://blog.cloudflare.com/content/images/2023/03/image2-18.png",
+        "author_image": "https://blog.cloudflare.com/cdn-cgi/image/format=auto,dpr=3,width=62,height=62/http://blog.cloudflare.com/content/images/2023/03/lejla_DU-1.jpg",
+        "read_time": 11,
+        "publish_date": "May 02, 2023 1:15 AM"
+    },
+    {
+        "id": 2,
+        "author_name": "By Bas Westerbaan",
+        "blog_title": "Defending against future threats: Cloudflare goes post-quantum",
+        "cover_image": "https://blog.cloudflare.com/content/images/2022/10/image1-2.png",
+        "author_image": "https://blog.cloudflare.com/cdn-cgi/image/format=auto,dpr=3,width=62,height=62/http://blog.cloudflare.com/content/images/2021/11/me.png",
+        "read_time": 14,
+        "publish_date": "Jul 10, 2023 7:50 PM"
+    },
+    {
+        "id": 3,
+        "author_name": "By Thom Wiggers",
+        "blog_title": "Building Confidence in Cryptographic Protocols",
+        "cover_image": "https://blog.cloudflare.com/content/images/2022/02/Blog-827---KEMs-and-KEMTLS.png",
+        "author_image": "https://blog.cloudflare.com/cdn-cgi/image/format=auto,dpr=3,width=62,height=62/http://blog.cloudflare.com/content/images/2023/03/665406.png",
+        "read_time": 23,
+        "publish_date": "Feb 24, 2022 5:30 PM"
+    },
+    {
+        "id": 4,
+        "author_name": "By Sofía Celi",
+        "blog_title": "The post-quantum future: challenges and opportunities",
+        "cover_image": "https://blog.cloudflare.com/content/images/2022/02/image2-25.png",
+        "author_image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGZhY2V8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
+        "read_time": 13,
+        "publish_date": "Feb 28, 2022 4:16 PM"
+    }
+]
