@@ -33,7 +33,7 @@ function App() {
         <div className='col col-sm-4'>
           <Activities
             readingTime={readingTime}
-            totalBookmarks={bookmarks.length}
+            totalBookmarks={bookmarks}
           ></Activities>
         </div>
       </div>
