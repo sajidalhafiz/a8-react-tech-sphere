@@ -22,7 +22,7 @@ const Article = (props) => {
                 <p>{read_time} min read <button onClick={()=>bookmarks(props.article)}><img src={bookmark} alt="" /></button></p>
             </div>
             <h1>{blog_title}</h1>
-            <button className='my-4 ' onClick={()=>readingTime(read_time)}>Mark as read</button>
+            <button className='my-4' onClick={()=>readingTime(read_time)}>Mark as read</button>
         </div>
     );
 };
