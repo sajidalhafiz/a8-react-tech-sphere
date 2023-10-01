@@ -1,9 +1,8 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Article from '../Article/Article';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
-const Blogs = () => {
+const Blogs = (props) => {
     
     const [articles, setArticles] = useState([]);
 
@@ -13,12 +12,15 @@ const Blogs = () => {
         .then(data => setArticles(data))
     },[])
 
+    const handleTimeSpend = props.handleTimeSpend;
+
     return (
         <div>
             {
                 articles.map(article => <Article
                     key={article.id}
                     article={article}
+                    handleTimeSpend={handleTimeSpend}
                 ></Article>)
             }
         </div>
