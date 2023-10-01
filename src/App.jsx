@@ -54,8 +54,8 @@ function App() {
   return (
     <>
       <Header></Header>
-      <div className='row'>
-        <div className='col col-sm-8 mb-5 pb-5'>
+      <div className='row mx-3'>
+        <div className='col-12 col-sm-8 mb-5 pb-5'>
           <Blogs
             handleTimeSpend={handleTimeSpend}
             handleBookmark={handleBookmark}
@@ -68,7 +68,7 @@ function App() {
             ></QABlog>)
           }
         </div>
-        <div className='col col-sm-4'>
+        <div className='col-12 col-sm-4'>
           <Activities
             readingTime={readingTime}
             totalBookmarks={bookmarks}

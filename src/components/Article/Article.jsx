@@ -9,7 +9,7 @@ const Article = (props) => {
     const bookmarks = props.handleBookmark;
 
     return (
-        <div className='shadow-sm my-4 p-4 rounded text-start' style={{ "width": "844px" }}>
+        <div className='shadow-sm my-4 p-4 rounded text-start'>
             <img className='rounded img-fluid' src={cover_image} alt="" />
             <div className='my-4 d-sm-flex justify-content-between'>
                 <div className='d-sm-flex gap-sm-4 '>
@@ -21,7 +21,7 @@ const Article = (props) => {
                 </div>
                 <p>{read_time} min read <button onClick={()=>bookmarks(props.article)}><img src={bookmark} alt="" /></button></p>
             </div>
-            <h1>{blog_title}</h1>
+            <h1 className='fs-4'>{blog_title}</h1>
             <button className='my-4' onClick={()=>readingTime(read_time)}>Mark as read</button>
         </div>
     );
