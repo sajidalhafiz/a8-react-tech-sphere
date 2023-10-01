@@ -8,9 +8,16 @@ import { useState } from 'react'
 function App() {
 
   const [readingTime, setReadingTime] = useState(0);
-
+  
   const handleTimeSpend = (time) => {
     setReadingTime(readingTime + time);
+  }
+  
+  const [bookmarks, setBookmarks] = useState([]);
+
+  const handleBookmark = (article) => {
+    const newBookmarks = [...bookmarks, article];
+    setBookmarks(newBookmarks);
   }
 
   return (
@@ -20,11 +27,13 @@ function App() {
         <div className='col col-sm-8'>
           <Blogs
             handleTimeSpend={handleTimeSpend}
+            handleBookmark={handleBookmark}
           ></Blogs>
         </div>
         <div className='col col-sm-4'>
           <Activities
             readingTime={readingTime}
+            totalBookmarks={bookmarks.length}
           ></Activities>
         </div>
       </div>

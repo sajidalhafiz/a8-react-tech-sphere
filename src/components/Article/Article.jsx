@@ -6,7 +6,8 @@ const Article = (props) => {
     const { cover_image, author_image, publish_date, read_time,  blog_title, author_name } = props.article
 
     const readingTime = props.handleTimeSpend;
-    
+    const bookmarks = props.handleBookmark;
+
     return (
         <div className='shadow-sm my-4 p-4 rounded text-start' style={{ "width": "844px" }}>
             <img className='rounded img-fluid' src={cover_image} alt="" />
@@ -18,7 +19,7 @@ const Article = (props) => {
                         <small>{publish_date}</small>
                     </div>
                 </div>
-                <p>{read_time} min read <button><img src={bookmark} alt="" /></button></p>
+                <p>{read_time} min read <button onClick={()=>bookmarks(props.article)}><img src={bookmark} alt="" /></button></p>
             </div>
             <h1>{blog_title}</h1>
             <button className='my-4 ' onClick={()=>readingTime(read_time)}>Mark as read</button>

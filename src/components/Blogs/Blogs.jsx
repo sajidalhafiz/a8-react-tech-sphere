@@ -13,6 +13,7 @@ const Blogs = (props) => {
     },[])
 
     const handleTimeSpend = props.handleTimeSpend;
+    const handleBookmark = props.handleBookmark;
 
     return (
         <div>
@@ -21,6 +22,7 @@ const Blogs = (props) => {
                     key={article.id}
                     article={article}
                     handleTimeSpend={handleTimeSpend}
+                    handleBookmark={handleBookmark}
                 ></Article>)
             }
         </div>
