@@ -5,7 +5,8 @@ import Blogs from './components/Blogs/Blogs'
 import Header from './components/Header/Header'
 import { ToastContainer, toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
-import { useState } from 'react'
+import { useEffect, useState } from 'react';
+import QABlog from './components/QABlog/QABlog'
 
 const notify = () => {
   toast.warn('You Have Already Bookmarked This Blog!', {
@@ -42,15 +43,30 @@ function App() {
     setBookmarks(newBookmarks);
   }
 
+  const [answers, setAnswers] = useState([]);
+
+  useEffect(() => {
+    fetch('QADb.json')
+      .then(res => res.json())
+      .then(data => setAnswers(data))
+  }, []);
+
   return (
     <>
       <Header></Header>
       <div className='row'>
-        <div className='col col-sm-8'>
+        <div className='col col-sm-8 mb-5 pb-5'>
           <Blogs
             handleTimeSpend={handleTimeSpend}
             handleBookmark={handleBookmark}
           ></Blogs>
+          <h2 className='my-5 pt-5 pb-2 text-start border-bottom border-4 border-info'>Q&A</h2>
+          {
+            answers.map(answer => <QABlog
+              key={answer.id}
+              answer={answer}
+            ></QABlog>)
+          }
         </div>
         <div className='col col-sm-4'>
           <Activities

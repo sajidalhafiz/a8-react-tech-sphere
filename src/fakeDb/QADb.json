@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "question": "What is the difference between props and state?",
+        "answer": "The stateful component uses states to re-render data for the component while props are used to pass the data into the child component. State is mutable, meaning that it can be changed or modified. On the other hand props is immutable, meaning that the component cannot modify the props. "
+    },
+    {
+        "id": 2,
+        "question": "How does useState work?",
+        "answer": "The useState hook is used to manage the state variable. The useState changes  whenever the state variable value need to be changed. To use the useState hook inside component: firstly, import the useState hook from react then declare state variable as 'const [state, setState] = useState(initialState);' The initialState could be anything like string, integer, object or an array"
+    },
+    {
+        "id": 3,
+        "question": "What is the purpose of useEffect other than fetching data?",
+        "answer": "Other than fetching data, useEffecet is used to serve various purposes. It can be used to manage state changes, set timer or interval, and interact with browser storage handling for user perspective."
+    },
+    {
+        "id": 4,
+        "question": "How Does React work?",
+        "answer": "React creates single page application using component based architecture to build user interfaces and manage it. It uses virtual DOM instead of actual DOM to efficiently manage the changes occurred by the user. The components are nothing but a javascript function where programmer can write HTML code with the help of jsx syntax. Component can only pass data to its child component in the unidirectional way because react does not allow bidirectional data flow."
+         
+    }
+]
